@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "fb9a524b48785e81",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9d8de6c26b81532",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8fcc37e08fea7315",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_TCM/01_Introduction/03_Network_Refersher/03_MAC_Addresses.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3e1f91a68e08504",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_TCM/01_Introduction/03_Network_Refersher/03_MAC_Addresses.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f7515332ca6c7da0",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8d52ddada7a8117",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27a867335ea4d597",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0d5bad7d1418bdaa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "61dd97a71d4d88e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3a441554a67b70ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "45402e8c84d66db8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41c547544349983d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02_TCM/01_Introduction/03_Network_Refersher/03_MAC_Addresses.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6c4a29875a979387",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02_TCM/01_Introduction/03_Network_Refersher/03_MAC_Addresses.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9ea337189bf15610",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce87242bd38206bc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02_TCM/01_Introduction/03_Network_Refersher/03_MAC_Addresses.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8fcc37e08fea7315",
+  "lastOpenFiles": [
+    "02_TCM/01_Introduction/03_Network_Refersher/02_IP_Addresses.md",
+    "02_TCM/01_Introduction/01_Introduction/02_Course_Discord.md",
+    "02_TCM/01_Introduction/01_Introduction/03_Day_In_The_Life.md",
+    "02_TCM/01_Introduction/03_Network_Refersher/03_MAC_Addresses.md",
+    "02_TCM/01_Introduction/03_Network_Refersher/01_Intro.md",
+    "02_TCM/01_Introduction/02_Notekeeping/02_Screenshots.md",
+    "02_TCM/01_Introduction/03_Network_Refersher",
+    "02_TCM/02",
+    "Pasted image 20240702155248.png",
+    "02_TCM/01_Introduction/02_Notekeeping/01_Effective_Notekeeping.md",
+    "02_TCM/01_Introduction/01_Introduction/05_Quiz.md",
+    "02_TCM/01_Introduction/01_Introduction/01_Course_Introduction.md",
+    "01_SEC+/1.First Day Sec+.md",
+    "01_SEC+/Cubersecurity Framework.md",
+    "Untitled",
+    "01_SEC+/Untitled",
+    "01_SEC+",
+    "03_OSCP",
+    "02_TCM",
+    "02_TCM/01_Introduction/02_Notekeeping",
+    "02_TCM/01_Introduction/01_Introduction/04_Why_Not_Be_H4x0r.md",
+    "02_TCM/01_Introduction/01_Introduction",
+    "02_TCM/01_Introduction",
+    "Welcome.md"
+  ]
+}
