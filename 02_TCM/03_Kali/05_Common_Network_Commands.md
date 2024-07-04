@@ -69,3 +69,24 @@ output:
 192.168.1.112 dev eth0 lladdr 00:60:e0:80:44:69 STALE 
 ```
 asks what IP address is associated with what MAC address
+`ip` command is a little be prettier
+
+`ip r` and `route` are the same thing
+```bash
+➜  ~ ip r
+default via 192.168.1.1 dev eth0 proto dhcp src 192.168.1.220 metric 100 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.220 metric 100 
+➜  ~ route       
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         _gateway        0.0.0.0         UG    100    0        0 eth0
+172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
+192.168.1.0     0.0.0.0         255.255.255.0   U     100    0        0 eth0
+```
+both of these are looking at the routing table, aka, where our traffic is routing through.
+
+# Go over this section again. This is confusing for me
+
+`ping` - basically asks "Hey are you still alive?"
+Might wont work. ICMP could be disabled and that could be the reason that it is off, or the host might be down. Just takes more troubleshooting to figure that out.
