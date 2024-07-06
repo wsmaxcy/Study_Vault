@@ -51,4 +51,4 @@
 11. What command can be used to install the package lolcat?
 	1. sudo apt lolcat
 	2. sudo apt add lolcat
-	3. sudo apt install lolcat
+	3. sudo apt install lolcat ✅
