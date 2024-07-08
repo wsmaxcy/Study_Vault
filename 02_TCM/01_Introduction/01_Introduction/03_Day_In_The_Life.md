@@ -8,7 +8,7 @@
 ### What is it?
 - Looking at the organization from the outside
 - hacking in from the outside
-- Focuses heavily on OSINT
+- Focuses heavily on [[OSINT]]
 	- Find out about organization and employees
 ### Questions?
 - Who are their employees

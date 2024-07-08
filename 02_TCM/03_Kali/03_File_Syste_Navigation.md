@@ -1,6 +1,6 @@
 ### Command Line
 Shows the path
-`Kali@Kali[~]` = User@Hostname[What folder]
+`Kali@Kali[~]` = `User@Hostname[What folder]`
 
 `cd` -> Change Directory
 `..` -> goes to the previous directory

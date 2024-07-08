@@ -12,7 +12,7 @@
 ---
 ### Foundations
 - Intro to Lab Environment
-- Kali Linux
+- [[Kali Linux]]
 - Computer Networking
 - Intro Python (labs)
 - Five stages of ethical hacking
