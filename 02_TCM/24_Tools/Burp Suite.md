@@ -1,5 +1,3 @@
-# Burp Suite
-
 ## Overview
 Burp Suite is a comprehensive web vulnerability scanner and security testing platform developed by PortSwigger. It provides an integrated environment for performing security testing of web applications, ranging from initial mapping and analysis of an application's attack surface to finding and exploiting security vulnerabilities.
 
@@ -34,14 +32,14 @@ Burp Suite is a comprehensive web vulnerability scanner and security testing pla
 
 ### On Linux:
 1. **Download Installer:**
-   ```sh
-   wget https://portswigger.net/burp/releases/download?product=community&version=2022.8.1&type=Linux
-   ```
+```sh
+wget https://portswigger.net/burp/releases/download?product=community&version=2022.8.1&type=Linux
+```
 
 2. **Run Installer:**
    ```sh
-   chmod +x burpsuite_community_linux_v2022_8_1.sh
-   ./burpsuite_community_linux_v2022_8_1.sh
+chmod +x burpsuite_community_linux_v2022_8_1.sh
+./burpsuite_community_linux_v2022_8_1.sh
    ```
 
 ## Basic Usage
