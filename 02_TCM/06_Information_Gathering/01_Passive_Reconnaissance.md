@@ -1,5 +1,5 @@
 ## Location Info
-- Satelite images
+- Satellite images
 - Drone recon
 - Building layout (badge readers, break areas, security, fencing)
 ## Job Information
@@ -16,9 +16,9 @@
 ## Web / Host
 ****
 #### Target Validation
-- WHOIS
-- nslookup
-- dnsrecon
+- [[WHOIS]]
+- [[nslookup]]
+- [[dnsrecon]]
 #### Finding Subdomains
 - [[Google Fu]]
 - [[dig]]
@@ -27,6 +27,12 @@
 - [[Bluto]]
 - [[crt.sh]]
 #### Fingerprinting
-- test
+- [[Nmap]]
+- [[Wappalyzer]]
+- [[WhatWeb]]
+- [[BuiltWith]]
+- [[Netcat]]
 #### Data Breaches
-- Test again
+- [[HaveIBeenPwned]]
+- [[Breach-parse]]
+- [[WeLeakInfo]]
