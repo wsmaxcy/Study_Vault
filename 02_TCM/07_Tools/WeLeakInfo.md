@@ -10,4 +10,4 @@ WeLeakInfo was a service that aggregated data from multiple data breaches, allow
 - [Have I Been Pwned](https://haveibeenpwned.com/)
 
 ## References
-- [WeLeakInfo Information](https://www.zdnet.com/article/fbi-seizes-weleakinfo-com-domain-for-selling-access-to-hacked-data/)
+- [WeLeakInfo Information](https://weleakinfo.io/)
