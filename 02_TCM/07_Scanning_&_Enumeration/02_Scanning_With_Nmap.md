@@ -13,3 +13,7 @@ It goes `SYN SYNACK RST`
 - `-A` - Stands for EVERYTHING. I want the Version Info, Operating System, Fingerprinting, Everything.
 - `-sU` - Scans UDP - UDP takes forever to scan. There is no connection response time. He says only to scan the top 1000 for UDP
 
+### Our job
+- See what ports are open
+- look for vulnerabilities
+- exploit those
