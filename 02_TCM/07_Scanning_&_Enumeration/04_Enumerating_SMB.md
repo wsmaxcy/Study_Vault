@@ -1,6 +1,19 @@
 ## File Share
 - Basically when there is s `Z` Drive or something that everyone can see
-- 
+- Port `139`
+- Scans folder, this would be from the printer/scanner to automatically give you access to files
+
+## Metasploit
+- run `msfconsole`
+- [[Metasploit]] this is an exploitation framework
+- auxiliary modules - scanning and enumeration
+- post modules - post exploition
+
+Looking for [[SMB]] Version types;
+
+## Tools
+[[smbclient]] is a tool that we can use that helps connect/enumerate [[SMB]]
+
 ****
 ### End of Video Questions
 

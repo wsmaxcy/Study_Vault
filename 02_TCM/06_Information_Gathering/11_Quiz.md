@@ -1,7 +1,7 @@
 1. Which of the following tools can be used for target validation? (multiple choice)
-	1. WHOIS ✅
-	2. nslookup ✅
-	3. dnsrecon ✅
+	1. [[WHOIS]] ✅
+	2. [[nslookup]] ✅
+	3. [[dnsrecon]] ✅
 2. If the Rules of Engagement state that ‘*.tcm-sec.com’ is in scope, which of the following targets can we legally attack? (multiple choice)
 	1. www.tcm-sec.com ✅
 	2. dev.tcm-sec.com ✅
