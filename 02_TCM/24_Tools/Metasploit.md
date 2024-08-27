@@ -16,14 +16,14 @@ Metasploit is a powerful and versatile penetration testing framework used for de
 
 ### On Unix-based systems:
 1. **Install Metasploit:**
-   ```sh
-   curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfupdate | bash
-   ```
+```sh
+curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfupdate | bash
+```
 
 2. **Run Metasploit:**
-   ```sh
-   msfconsole
-   ```
+```sh
+msfconsole
+```
 
 ### On Windows:
 1. **Download Installer:**
@@ -40,72 +40,72 @@ Metasploit is typically run from the command line using `msfconsole`. Here are s
 
 ### Starting Metasploit
 1. **Open Metasploit Console:**
-   ```sh
-   msfconsole
-   ```
+```sh
+msfconsole
+```
 
 ### Searching for Exploits
 1. **Search Exploits:**
-   ```sh
-   search name:exploit_name
-   ```
+```sh
+search name:exploit_name
+```
 
 ### Using an Exploit
 1. **Select Exploit:**
-   ```sh
-   use exploit/path/to/exploit
-   ```
+```sh
+use exploit/path/to/exploit
+```
 
 2. **Set Options:**
-   ```sh
-   set RHOST target_ip
-   set RPORT target_port
-   ```
+```sh
+set RHOST target_ip
+set RPORT target_port
+```
 
 3. **Set Payload:**
-   ```sh
-   set PAYLOAD payload_name
-   ```
+```sh
+set PAYLOAD payload_name
+```
 
 4. **Run Exploit:**
-   ```sh
-   exploit
-   ```
+```sh
+exploit
+```
 
 ### Auxiliary Modules
 1. **Search Auxiliary Modules:**
-   ```sh
-   search auxiliary
-   ```
+```sh
+search auxiliary
+```
 
 2. **Use Auxiliary Module:**
-   ```sh
-   use auxiliary/path/to/module
-   ```
+```sh
+use auxiliary/path/to/module
+```
 
 3. **Set Options:**
-   ```sh
-   set RHOST target_ip
-   ```
+```sh
+set RHOST target_ip
+```
 
 4. **Run Module:**
-   ```sh
-   run
-   ```
+```sh
+run
+```
 
 ### Post-Exploitation
 1. **Meterpreter Sessions:**
    - After successfully exploiting a target, use Meterpreter for post-exploitation tasks.
 
 2. **Interact with Session:**
-   ```sh
-   sessions -i session_id
-   ```
+```sh
+sessions -i session_id
+```
 
 3. **List Sessions:**
-   ```sh
-   sessions -l
-   ```
+```sh
+sessions -l
+```
 
 4. **Post-Exploitation Commands:**
    - Use commands like `sysinfo`, `hashdump`, and `shell` within a Meterpreter session.

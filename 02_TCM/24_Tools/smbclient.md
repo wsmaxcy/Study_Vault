@@ -17,17 +17,17 @@
 ### On Unix-based systems (Linux/macOS):
 1. **Install smbclient:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install smbclient
-     ```
+```sh
+sudo apt-get install smbclient
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install samba-client
-     ```
+```sh
+sudo yum install samba-client
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install samba
-     ```
+```sh
+brew install samba
+```
 
 ### On Windows:
 - SMB client functionality is built into Windows and accessible through File Explorer and Command Prompt (`net` commands).

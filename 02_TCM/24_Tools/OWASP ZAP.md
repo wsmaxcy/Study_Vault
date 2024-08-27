@@ -19,13 +19,13 @@ ZAP can be used by both beginners and professionals to perform automated and man
 ### On Unix-based systems (Linux/macOS):
 1. **Install OWASP ZAP via Package Manager:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install zaproxy
-     ```
+```sh
+sudo apt-get install zaproxy
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install owasp-zap
-     ```
+	    ```sh
+brew install owasp-zap
+```
 
 2. **Download Directly from OWASP ZAP Website:**
    - Download the latest version from the [OWASP ZAP Download Page](https://www.zaproxy.org/download/).
@@ -44,9 +44,9 @@ OWASP ZAP can be run from both the command line and GUI. Here are some common co
 ### Starting OWASP ZAP
 To start OWASP ZAP:
 - **On Unix-based systems:**
-  ```sh
-  zap.sh
-  ```
+```sh
+zap.sh
+```
 - **On Windows:**
   - Open OWASP ZAP from the Start Menu or run `zap.bat` from the installation directory.
 

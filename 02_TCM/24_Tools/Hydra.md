@@ -16,22 +16,22 @@ Hydra is a fast and flexible network logon cracker which supports numerous proto
 ### On Unix-based systems (Linux/macOS):
 1. **Install Dependencies:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install hydra
-     ```
+```sh
+sudo apt-get install hydra
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install hydra
-     ```
+```sh
+brew install hydra
+```
 
 2. **Compile from Source:**
-   ```sh
-   git clone https://github.com/vanhauser-thc/thc-hydra.git
-   cd thc-hydra
-   ./configure
-   make
-   sudo make install
-   ```
+```sh
+git clone https://github.com/vanhauser-thc/thc-hydra.git
+cd thc-hydra
+./configure
+make
+sudo make install
+```
 
 ### On Windows:
 1. **Using Cygwin:**

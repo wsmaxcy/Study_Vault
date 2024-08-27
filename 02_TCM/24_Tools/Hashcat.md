@@ -16,26 +16,26 @@ Hashcat is a powerful password-cracking tool that leverages the processing power
 ### On Unix-based systems (Linux/macOS):
 1. **Install Hashcat:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install hashcat
-     ```
+```sh
+sudo apt-get install hashcat
+```
    - On Red Hat-based systems:
      ```sh
-     sudo yum install hashcat
+sudo yum install hashcat
      ```
    - On macOS using Homebrew:
-     ```sh
-     brew install hashcat
-     ```
+```sh
+brew install hashcat
+```
 
 2. **Build from Source:**
    - Clone the repository and compile:
-   ```sh
-   git clone https://github.com/hashcat/hashcat.git
-   cd hashcat
-   make
-   sudo make install
-   ```
+```sh
+git clone https://github.com/hashcat/hashcat.git
+cd hashcat
+make
+sudo make install
+```
 
 ### On Windows:
 1. **Download the Binary:**
@@ -116,13 +116,13 @@ Masks are used to define character sets and lengths for brute force or hybrid at
 ### Optimizing Performance
 To optimize performance using GPU acceleration:
 1. **Select the Best OpenCL or CUDA Device:**
-   ```sh
-   hashcat -I
-   ```
+```sh
+hashcat -I
+```
 2. **Run Hashcat on Specific Device:**
-   ```sh
-   hashcat -m 0 -a 0 -d 1 hash.txt /usr/share/wordlists/rockyou.txt
-   ```
+```sh
+hashcat -m 0 -a 0 -d 1 hash.txt /usr/share/wordlists/rockyou.txt
+```
 
 ### Saving and Restoring Sessions
 To save a session for later resumption:

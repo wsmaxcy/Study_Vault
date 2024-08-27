@@ -16,12 +16,12 @@ WhatWeb is an open-source web scanner that identifies websites' technologies. It
 
 ### On Unix-based systems:
 1. **Using Git:**
-   ```sh
-   git clone https://github.com/urbanadventurer/WhatWeb.git
-   cd WhatWeb
-   sudo gem install bundler
-   bundle install
-   ```
+```sh
+git clone https://github.com/urbanadventurer/WhatWeb.git
+cd WhatWeb
+sudo gem install bundler
+bundle install
+```
 
 ### On Windows:
 1. **Using Git:**

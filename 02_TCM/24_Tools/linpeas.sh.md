@@ -16,25 +16,25 @@
 
 ### Download linpeas.sh:
 1. **Clone the PEASS-ng Repository:**
-   ```sh
-   git clone https://github.com/carlospolop/PEASS-ng.git
-   cd PEASS-ng/linPEAS
-   ```
+```sh
+git clone https://github.com/carlospolop/PEASS-ng.git
+cd PEASS-ng/linPEAS
+```
 
 2. **Download Directly:**
    - Use `wget` or `curl` to download `linpeas.sh` directly:
-   ```sh
-   wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
-   ```
+```sh
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
+```
    or
-   ```sh
-   curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o linpeas.sh
-   ```
+```sh
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o linpeas.sh
+```
 
 3. **Make the Script Executable:**
-   ```sh
-   chmod +x linpeas.sh
-   ```
+```sh
+chmod +x linpeas.sh
+```
 
 ## Basic Usage
 `linpeas.sh` is run from the command line. Here are some common commands and usage examples:

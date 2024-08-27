@@ -15,25 +15,25 @@
 
 ### Download pspy:
 1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/DominicBreuker/pspy.git
-   cd pspy
-   ```
+```sh
+git clone https://github.com/DominicBreuker/pspy.git
+cd pspy
+```
 
 2. **Download Precompiled Binary:**
    - Use `wget` or `curl` to download a precompiled binary directly:
-   ```sh
-   wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
-   ```
+```sh
+wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
+```
    or
-   ```sh
-   curl -LO https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
-   ```
+```sh
+curl -LO https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
+```
 
 3. **Make the Binary Executable:**
-   ```sh
-   chmod +x pspy64
-   ```
+```sh
+chmod +x pspy64
+```
 
 ## Basic Usage
 `pspy` is run from the command line. Here are some common commands and usage examples:

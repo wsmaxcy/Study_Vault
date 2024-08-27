@@ -18,10 +18,10 @@ SearchSploit is a command-line search tool for Exploit-DB, which allows you to q
    - SearchSploit is pre-installed in Kali Linux.
 
 2. **Manual Installation:**
-   ```sh
-   git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
-   ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
-   ```
+```sh
+git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
+ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
+```
 
 ### On Windows:
 1. **Using Windows Subsystem for Linux (WSL):**

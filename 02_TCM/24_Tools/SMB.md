@@ -24,32 +24,32 @@ SMB can be accessed and managed through various tools and commands. Here are som
    - Right-click on "This PC" > "Map network drive" > Enter the folder path and credentials.
 
 3. **Command Line:**
-   ```sh
-   net use Z: \\server\share /user:username password
-   ```
+```sh
+net use Z: \\server\share /user:username password
+```
 
 ### On Unix-based systems (Linux/macOS)
 1. **Install smbclient:**
    - Install smbclient using your package manager.
-   ```sh
-   sudo apt-get install smbclient  # On Debian-based systems
-   sudo yum install samba-client  # On Red Hat-based systems
-   ```
+```sh
+sudo apt-get install smbclient  # On Debian-based systems
+sudo yum install samba-client  # On Red Hat-based systems
+```
 
 2. **List Shared Folders:**
-   ```sh
-   smbclient -L //server -U username
-   ```
+```sh
+smbclient -L //server -U username
+```
 
 3. **Access Shared Folder:**
-   ```sh
-   smbclient //server/share -U username
-   ```
+```sh
+smbclient //server/share -U username
+```
 
 4. **Mount SMB Share:**
-   ```sh
-   sudo mount -t cifs -o username=username,password=password //server/share /mnt/share
-   ```
+```sh
+sudo mount -t cifs -o username=username,password=password //server/share /mnt/share
+```
 
 ## Advanced Configuration
 SMB configurations can be customized using the `smb.conf` file, typically found on Unix-based systems in `/etc/samba/smb.conf`.

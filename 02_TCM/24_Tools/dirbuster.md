@@ -16,15 +16,15 @@ DirBuster is a multi-threaded application designed to brute force directories an
 
 ### On Unix-based systems:
 1. **Clone Repository:**
-   ```sh
-   git clone https://github.com/OWASP/DirBuster.git
-   cd DirBuster
-   ```
+```sh
+git clone https://github.com/OWASP/DirBuster.git
+cd DirBuster
+```
 
 2. **Run DirBuster:**
-   ```sh
-   java -jar DirBuster.jar
-   ```
+```sh
+java -jar DirBuster.jar
+```
 
 ### On Windows:
 1. **Download JAR File:**

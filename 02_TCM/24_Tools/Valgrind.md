@@ -20,28 +20,28 @@ In cybersecurity, Valgrind can be used to analyze binaries for potential vulnera
 ### On Unix-based systems (Linux/macOS):
 1. **Install Valgrind:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install valgrind
-     ```
+```sh
+sudo apt-get install valgrind
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install valgrind
-     ```
+```sh
+sudo yum install valgrind
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install valgrind
-     ```
+```sh
+brew install valgrind
+```
 
 2. **Build from Source:**
    - Download the source code from the [Valgrind Download Page](http://valgrind.org/downloads/current.html).
    - Extract and compile:
-   ```sh
-   tar -xvf valgrind-3.17.0.tar.bz2
-   cd valgrind-3.17.0
-   ./configure
-   make
-   sudo make install
-   ```
+```sh
+tar -xvf valgrind-3.17.0.tar.bz2
+cd valgrind-3.17.0
+./configure
+make
+sudo make install
+```
 
 ### On Windows:
 Valgrind is not natively available for Windows, but you can use it in a Linux environment through WSL (Windows Subsystem for Linux) or a Linux virtual machine.
@@ -84,46 +84,46 @@ valgrind --track-origins=yes ./myprogram
 ### Memcheck
 - **Description:** Memcheck is Valgrind's most commonly used tool. It detects memory leaks, memory corruption, use of uninitialized memory, and more.
 - **Usage:**
-  ```sh
-  valgrind --tool=memcheck ./myprogram
-  ```
+```sh
+valgrind --tool=memcheck ./myprogram
+```
 
 ### Massif
 - **Description:** Massif is a heap profiler that measures the amount of heap memory used by a program.
 - **Usage:**
-  ```sh
-  valgrind --tool=massif ./myprogram
-  ```
+```sh
+valgrind --tool=massif ./myprogram
+```
 - **Visualize Output with ms_print:**
-  ```sh
-  ms_print massif.out.<pid>
-  ```
+```sh
+ms_print massif.out.<pid>
+```
 
 ### Callgrind
 - **Description:** Callgrind is a profiling tool that collects data about function call frequencies and execution paths.
 - **Usage:**
-  ```sh
-  valgrind --tool=callgrind ./myprogram
-  ```
+```sh
+valgrind --tool=callgrind ./myprogram
+```
 - **Visualize Output with KCachegrind:**
   - Install KCachegrind and open the output file to visualize:
-  ```sh
-  kcachegrind callgrind.out.<pid>
-  ```
+```sh
+kcachegrind callgrind.out.<pid>
+```
 
 ### Helgrind
 - **Description:** Helgrind detects data races in multithreaded programs, helping to identify race conditions and synchronization errors.
 - **Usage:**
-  ```sh
-  valgrind --tool=helgrind ./myprogram
-  ```
+```sh
+valgrind --tool=helgrind ./myprogram
+```
 
 ### DRD
 - **Description:** DRD is another thread error detector like Helgrind, focusing on detecting race conditions and deadlocks.
 - **Usage:**
-  ```sh
-  valgrind --tool=drd ./myprogram
-  ```
+```sh
+valgrind --tool=drd ./myprogram
+```
 
 ## Advanced Features
 Valgrind offers several advanced features for more specific use cases:
@@ -131,9 +131,9 @@ Valgrind offers several advanced features for more specific use cases:
 ### Custom Suppression Files
 To create custom suppression files to ignore specific known issues:
 1. **Run Valgrind and Generate Suppression Output:**
-   ```sh
-   valgrind --gen-suppressions=all ./myprogram
-   ```
+```sh
+valgrind --gen-suppressions=all ./myprogram
+```
 
 2. **Save the Generated Suppression to a File:**
    - Copy the output to a `.supp` file and use it in future runs.
@@ -141,14 +141,14 @@ To create custom suppression files to ignore specific known issues:
 ### Using Valgrind with GDB
 To use Valgrind with GDB for more detailed debugging:
 1. **Start Valgrind with GDB Support:**
-   ```sh
-   valgrind --vgdb=yes --vgdb-error=0 ./myprogram
-   ```
+```sh
+valgrind --vgdb=yes --vgdb-error=0 ./myprogram
+```
 
 2. **Attach GDB to the Running Process:**
-   ```sh
-   gdb ./myprogram <pid>
-   ```
+```sh
+gdb ./myprogram <pid>
+```
 
 ## Tools for Exploiting and Defending Using Valgrind
 

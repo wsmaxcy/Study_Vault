@@ -17,24 +17,24 @@ SQLMap is an open-source penetration testing tool that automates the process of 
 ### On Unix-based systems (Linux/macOS):
 1. **Install SQLMap:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install sqlmap
-     ```
+```sh
+sudo apt-get install sqlmap
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install sqlmap
-     ```
+```sh
+sudo yum install sqlmap
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install sqlmap
-     ```
+```sh
+brew install sqlmap
+```
 
 2. **Clone from GitHub:**
    - To get the latest version:
-   ```sh
-   git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-   cd sqlmap-dev
-   ```
+```sh
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+cd sqlmap-dev
+```
 
 ### On Windows:
 1. **Download the Binary:**
@@ -122,13 +122,13 @@ SQLMap provides options to customize HTTP requests:
 ### Evading Detection
 To evade detection from IDS and WAFs:
 - **Tamper Scripts**: SQLMap includes several tamper scripts to modify payloads and bypass WAFs:
-  ```sh
-  python sqlmap.py -u "http://example.com/vulnerable.php?id=1" --tamper=space2comment
-  ```
+```sh
+python sqlmap.py -u "http://example.com/vulnerable.php?id=1" --tamper=space2comment
+```
 - **Random User-Agents**: Automatically randomizes the User-Agent header to evade detection:
-  ```sh
-  python sqlmap.py -u "http://example.com/vulnerable.php?id=1" --random-agent
-  ```
+```sh
+python sqlmap.py -u "http://example.com/vulnerable.php?id=1" --random-agent
+```
 
 ## Tools for Exploiting and Defending Using SQLMap
 

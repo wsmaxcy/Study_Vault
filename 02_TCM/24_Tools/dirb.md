@@ -16,20 +16,20 @@ DirB is a command-line tool designed to brute force directories and files on web
 
 ### On Unix-based systems:
 1. **Install DirB:**
-   ```sh
-   sudo apt-get install dirb
-   ```
+```sh
+sudo apt-get install dirb
+```
 
 ### On macOS using Homebrew:
 1. **Install Homebrew (if not already installed):**
-   ```sh
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 2. **Install DirB:**
-   ```sh
-   brew install dirb
-   ```
+```sh
+brew install dirb
+```
 
 ### On Windows using Cygwin:
 1. **Install Cygwin from [Cygwin website](https://cygwin.com/install.html)**.

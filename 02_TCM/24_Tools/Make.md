@@ -18,17 +18,17 @@ In the context of hacking and cybersecurity, `make` is often used to compile exp
 ### On Unix-based systems (Linux/macOS):
 1. **Install make:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install make
-     ```
+```sh
+sudo apt-get install make
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install make
-     ```
+```sh
+sudo yum install make
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install make
-     ```
+```sh
+brew install make
+```
 
 ### On Windows:
 1. **Install MinGW or Cygwin:**

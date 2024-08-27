@@ -19,16 +19,16 @@ RainbowCrack is a password-cracking tool that uses rainbow tables to crack hashe
    - Download the source code for Unix/Linux.
 
 2. **Extract the Archive:**
-   ```sh
-   tar -zxvf rcracki_mt-1.7.1-src.tar.gz
-   ```
+```sh
+tar -zxvf rcracki_mt-1.7.1-src.tar.gz
+```
 
 3. **Build and Install:**
-   ```sh
-   cd rcracki_mt-1.7.1-src/src
-   make
-   sudo make install
-   ```
+```sh
+cd rcracki_mt-1.7.1-src/src
+make
+sudo make install
+```
 
 ### On Windows:
 1. **Download the Executable:**

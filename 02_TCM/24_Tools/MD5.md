@@ -18,9 +18,9 @@ MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function th
    - **Exploitation:**
      - **Tool:** [[Hashcat]]
      - **Technique:** Use Hashcat to find MD5 collisions:
-     ```sh
-     hashcat -m 0 -a 3 -o found.txt hash.txt
-     ```
+		```sh
+hashcat -m 0 -a 3 -o found.txt hash.txt
+```
    - **Mitigation:** Use more secure hash functions such as SHA-256 or SHA-3.
 
 ### 2. **Preimage Attacks**
@@ -29,8 +29,8 @@ MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function th
      - **Tool:** [[John the Ripper]]
      - **Technique:** Use John the Ripper to perform a preimage attack:
      ```sh
-     john --format=raw-md5 --wordlist=passwords.txt hashes.txt
-     ```
+john --format=raw-md5 --wordlist=passwords.txt hashes.txt
+```
    - **Mitigation:** Avoid using MD5 for any cryptographic applications, including password hashing and digital signatures.
 
 ### 3. **Rainbow Tables**
@@ -39,8 +39,8 @@ MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function th
      - **Tool:** [[RainbowCrack]]
      - **Technique:** Use RainbowCrack to reverse MD5 hashes:
      ```sh
-     rcrack . -l hash.txt
-     ```
+rcrack . -l hash.txt
+```
    - **Mitigation:** Use salt in hash generation to prevent rainbow table attacks.
 
 ### 4. **Length Extension Attacks**
@@ -49,8 +49,8 @@ MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function th
      - **Tool:** [[HashPump]]
      - **Technique:** Perform length extension attacks using HashPump:
      ```sh
-     hashpump -s <md5_hash> -d <original_data> -a <data_to_add> -k <key_length>
-     ```
+hashpump -s <md5_hash> -d <original_data> -a <data_to_add> -k <key_length>
+```
    - **Mitigation:** Use HMAC (Hash-based Message Authentication Code) which is not vulnerable to length extension attacks.
 
 ### 5. **Password Cracking**
@@ -59,8 +59,8 @@ MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function th
      - **Tool:** [[Hashcat]], [[John the Ripper]]
      - **Command (Hashcat):**
      ```sh
-     hashcat -m 0 -a 0 hashes.txt wordlist.txt
-     ```
+hashcat -m 0 -a 0 hashes.txt wordlist.txt
+```
    - **Mitigation:** Use stronger hashing algorithms with salt, such as bcrypt, scrypt, or Argon2.
 
 ## Tools for Exploiting MD5

@@ -16,23 +16,23 @@ GCC (GNU Compiler Collection) is a powerful compiler system produced by the GNU 
 ### On Unix-based systems (Linux/macOS):
 1. **Install GCC:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install gcc
-     ```
+```sh
+sudo apt-get install gcc
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install gcc
-     ```
+```sh
+sudo yum install gcc
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install gcc
-     ```
+```sh
+brew install gcc
+```
 
 2. **Verify Installation:**
    - Check the installed version:
-   ```sh
-   gcc --version
-   ```
+```sh
+gcc --version
+```
 
 ### On Windows:
 1. **Using MinGW:**

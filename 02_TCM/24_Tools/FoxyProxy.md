@@ -80,9 +80,9 @@ FoxyProxy offers several advanced options for more specific use cases:
 ### Using with SSH Tunnel
 1. **Set Up SSH Tunnel:**
    - Use SSH to create a SOCKS proxy: 
-   ```sh
-   ssh -D 8080 user@remote_host
-   ```
+```sh
+ssh -D 8080 user@remote_host
+```
 
 2. **Configure FoxyProxy:**
    - Add a new SOCKS5 proxy with IP `127.0.0.1` and port `8080`.

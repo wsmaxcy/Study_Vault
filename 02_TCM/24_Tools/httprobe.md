@@ -18,15 +18,15 @@ httprobe is a tool designed to take a list of domains and probe for working HTTP
    - Ensure you have Go installed on your system. You can download it from [golang.org](https://golang.org/).
 
 2. **Install httprobe:**
-   ```sh
-   go install github.com/tomnomnom/httprobe@latest
-   ```
+```sh
+go install github.com/tomnomnom/httprobe@latest
+```
 
 3. **Verify Installation:**
    - Ensure `httprobe` is in your PATH. You can check by running:
-   ```sh
-   httprobe -h
-   ```
+```sh
+httprobe -h
+```
 
 ## Basic Usage
 httprobe is run from the command line. Here are some common commands:

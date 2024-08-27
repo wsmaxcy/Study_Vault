@@ -21,7 +21,3 @@ dig example.com
 - Basic query: `dig example.com`
 - Query specific record type: `dig example.com MX`
 - Query a specific DNS server: `dig @8.8.8.8 example.com`
-
-## References
-
-- Dig Manual

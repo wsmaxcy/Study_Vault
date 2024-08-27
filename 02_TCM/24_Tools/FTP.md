@@ -19,17 +19,17 @@ FTP (File Transfer Protocol) is a standard network protocol used to transfer fil
    - **Exploitation:**
      - **Tool:** [[Wireshark]]
      - **Technique:** Capture FTP traffic and filter for credentials:
-     ```
-     tcp.port == 21
-     ```
+```
+tcp.port == 21
+```
    - **Mitigation:** Use secure alternatives like FTPS or SFTP, which encrypt credentials and data.
 
 ### 2. **Anonymous FTP Access**
    - **Description:** Some FTP servers are configured to allow anonymous access, potentially exposing sensitive files.
    - **Exploitation:**
-     ```sh
-     ftp anonymous@target_ip
-     ```
+```sh
+ftp anonymous@target_ip
+```
    - **Technique:** Connect to the FTP server using the username `anonymous` and a random password, and list accessible directories and files.
    - **Mitigation:** Disable anonymous FTP access or restrict access to non-sensitive directories.
 
@@ -38,9 +38,9 @@ FTP (File Transfer Protocol) is a standard network protocol used to transfer fil
    - **Exploitation:**
      - **Tool:** [[Burp Suite]]
      - **Technique:** Manipulate FTP commands to traverse directories:
-     ```
-     RETR ../../../../etc/passwd
-     ```
+```
+RETR ../../../../etc/passwd
+```
    - **Mitigation:** Properly configure FTP servers to restrict access to designated directories and validate file paths.
 
 ### 4. **Weak Permissions and Misconfigurations**
@@ -57,8 +57,8 @@ FTP (File Transfer Protocol) is a standard network protocol used to transfer fil
      - **Tool:** [[Hydra]]
      - **Command:**
      ```sh
-     hydra -l username -P /path/to/password_list.txt ftp://target_ip
-     ```
+hydra -l username -P /path/to/password_list.txt ftp://target_ip
+```
    - **Mitigation:** Implement account lockout mechanisms and use strong, unique passwords.
 
 ### 6. **FTP Bounce Attack**
@@ -67,8 +67,8 @@ FTP (File Transfer Protocol) is a standard network protocol used to transfer fil
      - **Tool:** [[Nmap.md|Nmap]]
      - **Command:**
      ```sh
-     nmap -b anonymous:anonymous@target_ip -p 21 ftp-bounce
-     ```
+nmap -b anonymous:anonymous@target_ip -p 21 ftp-bounce
+ ```
    - **Mitigation:** Disable FTP bounce by configuring the server to reject PORT commands to remote addresses.
 
 ## Tools for Exploiting FTP

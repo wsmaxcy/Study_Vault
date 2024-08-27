@@ -16,25 +16,25 @@ John the Ripper (often abbreviated as "John") is an open-source password crackin
 ### On Unix-based systems (Linux/macOS):
 1. **Install John the Ripper:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install john
-     ```
+```sh
+sudo apt-get install john
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install john
-     ```
+```sh
+sudo yum install john
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install john
-     ```
+```sh
+brew install john
+```
 
 2. **Build from Source:**
    - Clone the repository and compile:
-   ```sh
-   git clone https://github.com/openwall/john.git
-   cd john/src
-   ./configure && make
-   ```
+```sh
+git clone https://github.com/openwall/john.git
+cd john/src
+./configure && make
+```
 
 ### On Windows:
 1. **Download the Binary:**
@@ -97,9 +97,9 @@ To use GPU acceleration for faster cracking:
    - Ensure you have OpenCL or CUDA installed, then compile John the Ripper with GPU support.
 
 2. **Run John with GPU Acceleration:**
-   ```sh
-   john --format=raw-md5-opencl --wordlist=/usr/share/wordlists/rockyou.txt hashfile.txt
-   ```
+```sh
+john --format=raw-md5-opencl --wordlist=/usr/share/wordlists/rockyou.txt hashfile.txt
+```
 
 ### Cracking Windows Passwords (NTLM)
 To crack Windows NTLM password hashes:

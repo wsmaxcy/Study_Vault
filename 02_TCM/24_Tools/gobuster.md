@@ -17,35 +17,35 @@ Gobuster is a tool used to brute force URIs (directories and files) in web sites
 
 ### On Unix-based systems:
 1. **Install Go (if not already installed):**
-   ```sh
-   sudo apt-get install golang
-   ```
+```sh
+sudo apt-get install golang
+```
 
 2. **Install Gobuster:**
-   ```sh
-   go install github.com/OJ/gobuster/v3@latest
-   ```
+```sh
+go install github.com/OJ/gobuster/v3@latest
+```
 
 3. **Verify Installation:**
    Ensure `gobuster` is in your PATH. You can check by running:
-   ```sh
-   gobuster -h
-   ```
+```sh
+gobuster -h
+```
 
 ### On Windows:
 1. **Install Go (if not already installed):**
    - Download and install Go from [golang.org](https://golang.org/).
 
 2. **Install Gobuster:**
-   ```sh
-   go install github.com/OJ/gobuster/v3@latest
-   ```
+```sh
+go install github.com/OJ/gobuster/v3@latest
+```
 
 3. **Verify Installation:**
    Ensure `gobuster` is in your PATH. You can check by running:
-   ```sh
-   gobuster -h
-   ```
+```sh
+gobuster -h
+```
 
 ## Basic Usage
 Gobuster is run from the command line. Here are some common commands:

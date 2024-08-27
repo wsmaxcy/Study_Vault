@@ -16,30 +16,30 @@ OWASP Amass is an open-source tool that performs network mapping of attack surfa
 
 ### On Unix-based systems:
 1. **Using Homebrew (macOS and Linux):**
-   ```sh
-   brew install amass
-   ```
+```sh
+brew install amass
+```
 
 2. **Using Snap (Linux):**
-   ```sh
-   sudo snap install amass
-   ```
+```sh
+sudo snap install amass
+```
 
 3. **Using Go:**
-   ```sh
-   go get -v github.com/OWASP/Amass/v3/...
-   ```
+```sh
+go get -v github.com/OWASP/Amass/v3/...
+```
 
 ### On Windows:
 1. **Using Scoop:**
-   ```sh
-   scoop install amass
-   ```
+```sh
+scoop install amass
+```
 
 2. **Using Go:**
-   ```sh
-   go get -v github.com/OWASP/Amass/v3/...
-   ```
+```sh
+go get -v github.com/OWASP/Amass/v3/...
+```
 
 ## Basic Usage
 Amass is run from the command line. Here are some common commands:
@@ -68,14 +68,14 @@ amass enum -d example.com -o output.txt
 Amass can generate a graph of the discovered network infrastructure using tools like D3.js.
 
 1. **Generate Graph Data:**
-   ```sh
-   amass viz -d example.com -o amass_graph.dot
-   ```
+```sh
+amass viz -d example.com -o amass_graph.dot
+```
 
 2. **Convert to HTML (requires D3.js):**
-   ```sh
-   cat amass_graph.dot | dot -Tsvg -o amass_graph.svg
-   ```
+```sh
+cat amass_graph.dot | dot -Tsvg -o amass_graph.svg
+```
 
 ## Advanced Options
 Amass offers a wide range of options for more advanced usage. Some key options include:

@@ -18,26 +18,26 @@ In cybersecurity, AddressSanitizer is an essential tool for finding and analyzin
 ### On Unix-based systems (Linux/macOS):
 1. **Install a Compatible Compiler (GCC or Clang):**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install gcc g++ clang
-     ```
+```sh
+sudo apt-get install gcc g++ clang
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install gcc gcc-c++ clang
-     ```
+```sh
+sudo yum install gcc gcc-c++ clang
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install gcc clang
-     ```
+```sh
+brew install gcc clang
+```
 
 ### On Windows:
 1. **Install WSL (Windows Subsystem for Linux):**
    - Follow the instructions on the [Microsoft WSL Installation Guide](https://docs.microsoft.com/en-us/windows/wsl/install).
 
 2. **Install GCC or Clang on WSL:**
-   ```sh
-   sudo apt-get install gcc g++ clang
-   ```
+```sh
+sudo apt-get install gcc g++ clang
+```
 
 ## Basic Usage
 AddressSanitizer is enabled through compiler flags. Here are some common commands and usage examples:
@@ -84,30 +84,30 @@ allocated by thread T0 here:
 ### Detecting Buffer Overflows
 - **Description:** AddressSanitizer detects out-of-bounds memory accesses, such as buffer overflows, by monitoring heap and stack boundaries.
 - **Usage:**
-  ```sh
-  gcc -fsanitize=address -o myprogram myprogram.c
-  ```
+```sh
+gcc -fsanitize=address -o myprogram myprogram.c
+```
 
 ### Detecting Use-After-Free Errors
 - **Description:** ASan detects use-after-free errors by tracking memory deallocation and checking accesses to freed memory.
 - **Usage:**
-  ```sh
-  clang -fsanitize=address -o myprogram myprogram.c
-  ```
+```sh
+clang -fsanitize=address -o myprogram myprogram.c
+```
 
 ### Enabling Leak Detection
 - **Description:** ASan can be configured to detect memory leaks, helping to identify memory not properly released back to the system.
 - **Usage:**
-  ```sh
-  ASAN_OPTIONS=detect_leaks=1 ./myprogram
-  ```
+```sh
+ASAN_OPTIONS=detect_leaks=1 ./myprogram
+```
 
 ### Stack and Global Buffer Overflows
 - **Description:** Detects stack and global buffer overflows, which occur when a program writes outside the intended buffer area.
 - **Usage:**
-  ```sh
-  gcc -fsanitize=address -o myprogram myprogram.c
-  ```
+```sh
+gcc -fsanitize=address -o myprogram myprogram.c
+```
 
 ## Advanced Options
 AddressSanitizer offers several advanced options for more specific use cases:
@@ -121,13 +121,13 @@ ASAN_OPTIONS=redzone=128 ./myprogram
 ### Suppressing Specific Errors
 To suppress specific errors using a suppression file:
 1. **Create a Suppression File (`asan.supp`):**
-   ```plaintext
-   leak:my_leaky_function
-   ```
+```plaintext
+leak:my_leaky_function
+```
 2. **Run the Program with Suppressions:**
-   ```sh
-   ASAN_OPTIONS=suppressions=asan.supp ./myprogram
-   ```
+```sh
+ASAN_OPTIONS=suppressions=asan.supp ./myprogram
+```
 
 ### Tuning Performance
 To reduce the performance overhead of ASan:

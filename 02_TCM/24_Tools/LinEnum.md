@@ -15,25 +15,25 @@ LinEnum is a shell script designed to automate the process of Linux privilege es
 
 ### Download LinEnum:
 1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/rebootuser/LinEnum.git
-   cd LinEnum
-   ```
+```sh
+git clone https://github.com/rebootuser/LinEnum.git
+cd LinEnum
+```
 
 2. **Download Directly:**
    - Use `wget` or `curl` to download `LinEnum.sh` directly:
-   ```sh
-   wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
-   ```
+```sh
+wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+```
    or
-   ```sh
-   curl -O https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
-   ```
+```sh
+curl -O https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+```
 
 3. **Make the Script Executable:**
-   ```sh
-   chmod +x LinEnum.sh
-   ```
+```sh
+chmod +x LinEnum.sh
+```
 
 ## Basic Usage
 LinEnum is run from the command line. Here are some common commands and usage examples:

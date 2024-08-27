@@ -15,21 +15,21 @@ Nikto can be installed on most Unix-based systems and Windows using Cygwin. The 
 
 ### On Unix-based systems:
 1. **Update package list and install dependencies:**
-   ```sh
-   sudo apt-get update
-   sudo apt-get install perl libnet-ssleay-perl libwhisker2-perl
-   ```
+```sh
+sudo apt-get update
+sudo apt-get install perl libnet-ssleay-perl libwhisker2-perl
+```
 
 2. **Download Nikto:**
-   ```sh
-   git clone https://github.com/sullo/nikto.git
-   cd nikto/program
-   ```
+```sh
+git clone https://github.com/sullo/nikto.git
+cd nikto/program
+```
 
 3. **Run Nikto:**
-   ```sh
-   perl nikto.pl -h example.com
-   ```
+```sh
+perl nikto.pl -h example.com
+```
 
 ### On Windows using Cygwin:
 1. **Install Cygwin from [Cygwin website](https://cygwin.com/install.html)**.

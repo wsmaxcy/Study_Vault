@@ -18,17 +18,17 @@ SSH (Secure Shell) is a cryptographic network protocol for operating network ser
 ### On Unix-based systems (Linux/macOS):
 1. **Install OpenSSH:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install openssh-client openssh-server
-     ```
+```sh
+sudo apt-get install openssh-client openssh-server
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install openssh-clients openssh-server
-     ```
+```sh
+sudo yum install openssh-clients openssh-server
+```
    - On macOS (OpenSSH is included by default):
-     ```sh
-     brew install openssh
-     ```
+```sh
+brew install openssh
+```
 
 ### On Windows:
 1. **Windows 10 and later:**
@@ -86,14 +86,14 @@ SSH offers several advanced options for more specific use cases:
 
 ### Key-Based Authentication
 1. **Generate SSH Key Pair:**
-   ```sh
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-   ```
+```sh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
 2. **Copy Public Key to Remote Server:**
-   ```sh
-   ssh-copy-id username@hostname
-   ```
+```sh
+ssh-copy-id username@hostname
+```
 
 ### SSH Config File
 Create an SSH config file to simplify connections (`~/.ssh/config`):
@@ -111,14 +111,14 @@ ssh alias
 
 ### Using SSH Agent
 1. **Start SSH Agent:**
-   ```sh
-   eval $(ssh-agent -s)
-   ```
+```sh
+eval $(ssh-agent -s)
+```
 
 2. **Add SSH Key:**
-   ```sh
-   ssh-add ~/.ssh/id_rsa
-   ```
+```sh
+ssh-add ~/.ssh/id_rsa
+```
 
 ## Best Practices
 - **Use Strong Passwords/Keys:** Ensure that strong passwords or keys are used for authentication.

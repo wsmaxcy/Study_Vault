@@ -12,9 +12,9 @@ The popularity of `rockyou.txt` in hacking and cybersecurity stems from its comp
 ## Sources
 - **Download Location:** `rockyou.txt` is included in many security distributions like Kali Linux. It can also be downloaded from various online repositories.
 - **Kali Linux Path:** On Kali Linux, you can typically find `rockyou.txt` in the `/usr/share/wordlists/` directory. If it is not yet uncompressed, you can use the following command:
-  ```sh
-  gunzip /usr/share/wordlists/rockyou.txt.gz
-  ```
+```sh
+gunzip /usr/share/wordlists/rockyou.txt.gz
+```
 
 ## Installation
 
@@ -24,13 +24,13 @@ The popularity of `rockyou.txt` in hacking and cybersecurity stems from its comp
 
 2. **Download Directly:**
    - Use `wget` or `curl` to download `rockyou.txt` directly:
-   ```sh
-   wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
-   ```
+```sh
+wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
+```
    or
-   ```sh
-   curl -O https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
-   ```
+```sh
+curl -O https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
+```
 
 ### On Windows:
 1. **Download Directly from GitHub or Other Repositories:**

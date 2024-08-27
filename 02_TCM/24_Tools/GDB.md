@@ -16,17 +16,17 @@ GDB (GNU Debugger) is a powerful debugging tool for programs written in language
 ### On Unix-based systems (Linux/macOS):
 1. **Install GDB:**
    - On Debian-based systems:
-     ```sh
-     sudo apt-get install gdb
-     ```
+```sh
+sudo apt-get install gdb
+```
    - On Red Hat-based systems:
-     ```sh
-     sudo yum install gdb
-     ```
+```sh
+sudo yum install gdb
+```
    - On macOS using Homebrew:
-     ```sh
-     brew install gdb
-     ```
+```sh
+brew install gdb
+```
 
 ### On Windows:
 1. **Using MinGW:**
@@ -42,112 +42,112 @@ GDB is run from the command line interface (CLI). Here are some common commands 
 
 ### Starting GDB
 1. **Open GDB:**
-   ```sh
-   gdb <program>
-   ```
+```sh
+gdb <program>
+```
 
 2. **Run the Program:**
-   ```sh
-   run
-   ```
+```sh
+run
+```
 
 ### Setting Breakpoints
 - To set a breakpoint at the start of the `main` function:
-  ```sh
-  break main
-  ```
+```sh
+break main
+```
 
 - To set a breakpoint at a specific line number:
-  ```sh
-  break <filename>:<line_number>
-  ```
+```sh
+break <filename>:<line_number>
+```
 
 ### Stepping Through Code
 - **Step Into:** Execute the next line of code and step into functions:
-  ```sh
-  step
-  ```
+```sh
+step
+```
 
 - **Next:** Execute the next line of code without stepping into functions:
-  ```sh
-  next
-  ```
+```sh
+next
+ ```
 
 - **Continue:** Continue execution until the next breakpoint or the end of the program:
-  ```sh
-  continue
-  ```
+```sh
+continue
+```
 
 ### Inspecting Memory and Registers
 - **View a Variable's Value:**
-  ```sh
-  print <variable_name>
-  ```
+```sh
+print <variable_name>
+```
 
 - **Examine Memory at an Address:**
-  ```sh
-  x/<format> <address>
-  ```
+```sh
+x/<format> <address>
+```
   - Example to view four words of memory in hexadecimal format:
-  ```sh
-  x/4xw 0x7fffffffe000
-  ```
+```sh
+x/4xw 0x7fffffffe000
+```
 
 - **View Registers:**
-  ```sh
-  info registers
-  ```
+```sh
+info registers
+ ```
 
 ### Modifying Memory
 - **Modify a Variable's Value:**
-  ```sh
-  set variable <variable_name> = <new_value>
-  ```
+```sh
+set variable <variable_name> = <new_value>
+```
 
 - **Write to Memory:**
-  ```sh
-  set *(int*)0x7fffffffe000 = 0xdeadbeef
-  ```
+```sh
+set *(int*)0x7fffffffe000 = 0xdeadbeef
+```
 
 ### Analyzing Core Dumps
 - **Load a Core Dump:**
-  ```sh
-  gdb <program> <core_file>
-  ```
+```sh
+gdb <program> <core_file>
+```
 
 - **Inspect the State at the Time of the Crash:**
-  ```sh
-  backtrace
-  ```
+```sh
+backtrace
+```
 
 ## Advanced Features
 GDB offers several advanced features for more specific use cases:
 
 ### Remote Debugging
 1. **Start GDB on the Local Machine:**
-   ```sh
-   gdb <program>
-   ```
+```sh
+gdb <program>
+```
 
 2. **Connect to a Remote Target:**
-   ```sh
-   target remote <hostname>:<port>
-   ```
+```sh
+target remote <hostname>:<port>
+```
 
 ### Scripting with Python
 - **Create a Python Script to Automate Debugging Tasks:**
-  ```python
-  # Save this as script.py
-  import gdb
-  gdb.execute("break main")
-  gdb.execute("run")
-  gdb.execute("continue")
-  ```
+```python
+# Save this as script.py
+import gdb
+gdb.execute("break main")
+gdb.execute("run")
+gdb.execute("continue")
+```
 
 - **Run the Script in GDB:**
-  ```sh
-  source script.py
-  ```
+```sh
+source script.py
+```
 
 ### Exploit Development
 - **Finding Buffer Overflows:** Use GDB to analyze crashes and determine the length and content needed to overwrite return addresses.
