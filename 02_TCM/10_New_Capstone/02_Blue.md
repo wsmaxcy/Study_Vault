@@ -1,0 +1,1 @@
+ezpz just a eternal blue. did it on my kali wsl thing. scan it with eternalblue and boom it works
