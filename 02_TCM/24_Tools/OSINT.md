@@ -19,21 +19,21 @@ Open Source Intelligence (OSINT) refers to the process of collecting and analyzi
 
 ### Common OSINT Tools
 - [[Google Fu]]
-- [[HaveIBeenPwned.md|Have I Been Pwned]]
-- [[hunter.io.md|Hunter.io]]
-- [[crt.sh.md|crt.sh]]
-- [[phonebook.cz.md|Phonebook.cz]]
-- [[Sublist3r.md|Sublist3r]]
-- [[BuiltWith.md|BuiltWith]]
-- [[Wappalyzer.md|Wappalyzer]]
+- [[HaveIBeenPwned]]
+- [[hunter.io]]
+- [[crt.sh]]
+- [[phonebook.cz]]
+- [[Sublist3r]]
+- [[BuiltWith]]
+- [[Wappalyzer]]
 - [[Leakbase.io]]
 - [[Dehashed.com]]
-- [[Bluto.md|Bluto]]
-- [[dnsrecon.md|DNSRecon]]
+- [[Bluto]]
+- [[dnsrecon]]
 - [[Google Fu]]
-- [[Breach-parse.md|Breach-Parse]]
-- [[WhatWeb.md|WhatWeb]]
-- [[WHOIS.md|WHOIS]]
+- [[Breach-parse]]
+- [[WhatWeb]]
+- [[WHOIS]]
 
 ## OSINT Techniques
 

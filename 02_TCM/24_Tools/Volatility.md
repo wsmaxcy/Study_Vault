@@ -22,7 +22,7 @@ Volatility is widely used to uncover evidence of malicious activity, analyze mal
 
    - Clone the Volatility repository from GitHub:
 
- ```sh
+```sh
 git clone https://github.com/volatilityfoundation/volatility3.git
 cd volatility3
 ```

@@ -114,7 +114,7 @@ sessions -l
 - **Regular Updates:** Keep Metasploit and its modules updated to benefit from the latest exploits and features.
 - **Use Appropriate Payloads:** Choose payloads that are suitable for the target environment.
 - **Manage Sessions Carefully:** Ensure proper session management to avoid detection and maintain control over exploited systems.
-- **Combine with Other Tools:** Use Metasploit in conjunction with other tools like [[Nmap.md|Nmap]], [[Burp Suite]], and [[WhatWeb.md|WhatWeb]] for comprehensive assessments.
+- **Combine with Other Tools:** Use Metasploit in conjunction with other tools like [[Nmap]], [[Burp Suite]], and [[WhatWeb]] for comprehensive assessments.
 
 ## References
 - [Metasploit Official Documentation](https://docs.metasploit.com/)
